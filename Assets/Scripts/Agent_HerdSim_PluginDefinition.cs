@@ -14,7 +14,7 @@ namespace wizardscode.plugin
 
         public override Type GetManagerType()
         {
-            return typeof(AbstractPluginManager);
+            return typeof(Agent_HerdSim_PluginManager);
         }
 
         public override string GetPluginImplementationClassName()
@@ -24,7 +24,7 @@ namespace wizardscode.plugin
 
         public override string GetProfileTypeName()
         {
-            return typeof(HerdSim_Agent_Profile).ToString();
+            return typeof(HerdSim_Agent_Profile).Name.ToString();
         }
 
         public override string GetReadableName()

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97578dd625743247ba5b96407687cec, type: 3}
+  m_Name: DigitalPaintingManagerProfile_HerdSim
+  m_EditorClassIdentifier: 
+  DefaultCameraPrefab: {fileID: 11400000, guid: 3ff57546b87291c45a94d0d20e5e97b8,
+    type: 2}
+  DefaultTerrainPrefab: {fileID: 11400000, guid: ac9bd176701996549b36fb568b146fe2,
+    type: 2}
+  colorSpace: {fileID: 11400000, guid: 4bef797352bb8b24cb87e86fe6b34062, type: 2}
+  screenSpace: {fileID: 11400000, guid: 916bfc1eab676944c8e80e23b40b2825, type: 2}
+  DefaultAgentPrefab: {fileID: 11400000, guid: 30ed376e4f058e6418ede3b423d6d3cd, type: 2}
