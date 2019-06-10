@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: DESCRIPTIVENAME_ScreenSpaceShadow_SettingSO
+  m_Name: ScreenSpaceShadow_SettingSO_HerdSim
   m_EditorClassIdentifier: Assembly-CSharp:wizardscode.validation:ScreenSpaceShadowSettingSO
   SettingName: S teen space shadows
   Nullable: 0
