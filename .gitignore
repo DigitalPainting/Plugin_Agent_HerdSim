@@ -35,3 +35,12 @@ sysinfo.txt
 *.apk
 *.unitypackage
 Logs
+
+# Digital Painting
+.gitmodules
+Assets/DigitalPainting
+Assets/DigitalPainting.meta
+Assets/Flying-Pathfinding
+Assets/Flying-Pathfinding.meta
+Assets/SO\ Architecture
+Assets/SO\ Architecture.meta
