@@ -10,5 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9a2fa8a5377b3f4fb619a46638000eb, type: 3}
-  m_Name: Profile_Agent_HerdSim
+  m_Name: Profile_Agent_DefaultHerdSim
   m_EditorClassIdentifier: 
+  herdSimController: {fileID: 11400000, guid: 195f8dc122dc75441b4fd7936c2a4412, type: 2}
+  herd: {fileID: 11400000, guid: 4c053378c0be15e4a9ffb43fcef6c693, type: 2}

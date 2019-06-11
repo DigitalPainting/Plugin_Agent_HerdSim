@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4b20c42932cbb049affb2b59a7514b3, type: 3}
+  m_Name: HerdAnimalSettingSO_DefaultSheepHerd
+  m_EditorClassIdentifier: 
+  SettingName: Sheep
+  Nullable: 0
+  m_suggestedValue: {fileID: 100012, guid: 93d4c4cad0a110143bb7b499e4b1f297, type: 3}
+  AddToScene: 1
+  spawnPosition: {x: 500, y: 0, z: 500}
+  numberOfAnimals: 25
+  spawnRadius: 10
+  minSize: 0.8
+  maxSize: 1.1
+  maxAngle: 360
+  minAngle: 0
+  isGrounded: 1
+  yOffset: 0

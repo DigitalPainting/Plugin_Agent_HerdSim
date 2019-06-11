@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - HerdChild
+  - Water
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -30,8 +33,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Ground
+  - HerdSim
   - 
   - 
   - 

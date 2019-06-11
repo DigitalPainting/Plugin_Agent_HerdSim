@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c97578dd625743247ba5b96407687cec, type: 3}
-  m_Name: DigitalPaintingManagerProfile_HerdSim
+  m_Name: DigitalPaintingManagerProfile_DefaultHerdSim
   m_EditorClassIdentifier: 
   DefaultCameraPrefab: {fileID: 11400000, guid: 3ff57546b87291c45a94d0d20e5e97b8,
     type: 2}
   DefaultTerrainPrefab: {fileID: 11400000, guid: ac9bd176701996549b36fb568b146fe2,
     type: 2}
-  colorSpace: {fileID: 11400000, guid: 4bef797352bb8b24cb87e86fe6b34062, type: 2}
-  screenSpace: {fileID: 11400000, guid: 916bfc1eab676944c8e80e23b40b2825, type: 2}
-  DefaultAgentPrefab: {fileID: 11400000, guid: 30ed376e4f058e6418ede3b423d6d3cd, type: 2}
+  colorSpace: {fileID: 11400000, guid: 94d311f0c8c865f4898ee0ce5c87b32b, type: 2}
+  screenSpace: {fileID: 11400000, guid: 329b8b3884287d840bac5fde06ce6b31, type: 2}
+  DefaultAgentPrefab: {fileID: 11400000, guid: 7fdb0932f4d7c344e9755f705a4e546e, type: 2}
