@@ -18,4 +18,4 @@ MonoBehaviour:
     type: 2}
   colorSpace: {fileID: 11400000, guid: 94d311f0c8c865f4898ee0ce5c87b32b, type: 2}
   screenSpace: {fileID: 11400000, guid: 329b8b3884287d840bac5fde06ce6b31, type: 2}
-  DefaultAgentPrefab: {fileID: 11400000, guid: 7fdb0932f4d7c344e9755f705a4e546e, type: 2}
+  DefaultAgentPrefab: {fileID: 11400000, guid: 8b9aeacd5dc78f7469f8dd8135a45b50, type: 2}
