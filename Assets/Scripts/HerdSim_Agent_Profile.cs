@@ -1,12 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using wizardscode.editor;
-using wizardscode.extension;
-using wizardscode.plugin.validation;
-using wizardscode.validation;
+﻿using UnityEngine;
+using WizardsCode.Editor;
+using WizardsCode.Plugin.Validation;
+using WizardsCode.Plugin;
 
-namespace wizardscode.plugin
+namespace WizardsCode.Plugin
 {
     [CreateAssetMenu(fileName = "DECRIPTIVENAME_CATEGORY_Profile", menuName = "Wizards Code/Agent/HerdSim/Plugin Profile")]
     public class HerdSim_Agent_Profile : AbstractPluginProfile

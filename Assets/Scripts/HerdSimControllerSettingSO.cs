@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using wizardscode.extension;
-using wizardscode.validation;
+﻿using UnityEngine;
+using WizardsCode.Extension;
+using WizardsCode.Validation;
 
-namespace wizardscode.plugin.validation
+namespace WizardsCode.Plugin.Validation
 {
     [CreateAssetMenu(fileName = "HerdSimSettingSO_DESCRIPTIVENAME", menuName = "Wizards Code/Agent/HerdSim/Controller Settings")]
     public class HerdSimControllerSettingSO : PrefabSettingSO

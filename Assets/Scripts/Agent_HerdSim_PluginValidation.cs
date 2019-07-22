@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using wizardscode.plugin;
+using WizardsCode.Plugin;
+using WizardsCode.Validation;
 
-namespace wizardscode.validation
+namespace WizardsCode.validation
 {
     public class Agent_HerdSim_PluginValidation : ValidationTest<Agent_HerdSim_PluginManager>
     {
@@ -12,24 +11,29 @@ namespace wizardscode.validation
 
         public override ValidationTest<Agent_HerdSim_PluginManager> Instance => new Agent_HerdSim_PluginValidation();
 
-        internal override string ProfileType => typeof(HerdSim_Agent_Profile).ToString();
+        internal override Type ProfileType => typeof(HerdSim_Agent_Profile);
 
-        internal override void CustomValidations()
+        internal override bool InitialCustomValidations()
         {
-            if (Terrain.activeTerrain.gameObject.layer == LayerMask.NameToLayer(terrainLayerName))
+            AbstractPluginManager pluginManager = GameObject.FindObjectOfType<Agent_HerdSim_PluginManager>();
+            bool result = base.InitialCustomValidations();
+            if (UnityEngine.Terrain.activeTerrain.gameObject.layer == LayerMask.NameToLayer(terrainLayerName))
             {
-                Collection.AddOrUpdate(GetPassResult("Terrain layer", "The terrain is marked as having the layer `Ground`.", GetType().Name), GetType().Name);
+                AddOrUpdateAsPass("Terrain Layer", pluginManager, "The terrain is marked as having the layer `Ground`.");
+                result &= true;
             }
             else
             {
                 ResolutionCallback callback = new ResolutionCallback(SetTerrainLayer, "Set Terrain Layer");
-                Collection.AddOrUpdate(GetErrorResult("Terrain layer", "The terrain must be marked as having the layer `Ground`.", GetType().Name, callback), GetType().Name);
+                AddOrUpdateAsError("Terrain Layer", pluginManager, "The terrain must be marked as having the layer `Ground`.", callback);
+                result = false;
             }
+            return result;
         }
 
         private void SetTerrainLayer()
         {
-            Terrain.activeTerrain.gameObject.layer = LayerMask.NameToLayer(terrainLayerName);
+            UnityEngine.Terrain.activeTerrain.gameObject.layer = LayerMask.NameToLayer(terrainLayerName);
         }
     }
 }

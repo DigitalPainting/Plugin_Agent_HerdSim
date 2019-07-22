@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using WizardsCode.Plugin;
 
-namespace wizardscode.plugin
+namespace WizardsCode.Plugin
 {
     public class Agent_HerdSim_PluginDefinition : AbstractPluginDefinition
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace wizardscode.plugin
+namespace WizardsCode.Plugin
 {
     public class Agent_HerdSim_PluginManager : AbstractPluginManager
     {

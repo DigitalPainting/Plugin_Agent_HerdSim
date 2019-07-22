@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
-using wizardscode.validation;
+﻿using UnityEngine;
+using WizardsCode.Validation;
 
-namespace wizardscode.plugin.validation
+namespace WizardsCode.Plugin.Validation
 {
     [CreateAssetMenu(fileName = "HerdAnimalSettingSO_DESCRIPTIVENAME", menuName = "Wizards Code/Agent/HerdSim/Herd Settings")]
     public class HerdSettingSO : PrefabSettingSO
@@ -40,7 +37,7 @@ namespace wizardscode.plugin.validation
                 Vector3 pos = (Random.insideUnitSphere * spawnRadius);
                 if (isGrounded)
                 {
-                    pos.y = Terrain.activeTerrain.SampleHeight(pos) + (yOffset * size);
+                    pos.y = UnityEngine.Terrain.activeTerrain.SampleHeight(pos) + (yOffset * size);
                 }
                 Quaternion angle = Quaternion.Euler(0, Random.Range(minAngle, maxAngle), 0);
                 GameObject obj = ConvertToGameObject(Instantiate(SuggestedValue));
